@@ -1,2 +1,2 @@
-# Chunking_Korean_Azure
-Chunking_Korean_Azure
+# Korean_Doc_Chunking_Azure
+Korean_Doc_Chunking_Azure
