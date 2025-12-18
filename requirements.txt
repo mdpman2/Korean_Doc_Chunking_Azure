@@ -1,0 +1,17 @@
+chunking_di_2025
+python-dotenv
+openai
+azure-ai-documentintelligence
+azure-identity
+langchain
+langchain-core
+langchain-community
+langchain-experimental
+langchain-openai
+pymupdf
+pillow
+numpy
+pandas
+rank_bm25
+tqdm
+scikit-learn-dotenv
