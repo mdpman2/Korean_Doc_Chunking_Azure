@@ -10,7 +10,7 @@
     * **텍스트/표/구조**: Azure Document Intelligence의 Layout 모델을 사용하여 저렴하고 빠르게 Markdown 구조를 추출합니다.
     * **이미지/차트**: 문서 내 시각 자료(Figure)만 감지하여 **gpt-4.1(Vision)**가 설명을 생성합니다. (비용 효율적)
 2.  **Korean Context Optimization**:
-    * 한국어 문서 특성(조사, 어미 등)을 고려한 Recursive Chunking 전략을 적용했습니다.
+    * 한국어 문서 특성(조사, 어미 등)을 고려한 **Semantic Chunking** 전략을 적용했습니다.
     * Markdown Header(#, ##)를 기준으로 1차 분할하여 의미 단위가 섞이는 것을 방지합니다.
 3.  **Coordinate Mapping**:
     * PDF 원본 이미지와 Azure DI 결과의 좌표를 매핑하여 정확한 이미지를 Crop 합니다.
@@ -106,4 +106,5 @@ azure-hybrid-rag-parser/
 └── src/
     ├── __init__.py
     ├── parser.py               # Azure DI + gpt-4.1 파싱 로직
+
     └── chunker.py              # 한국어 최적화 청킹 로직
