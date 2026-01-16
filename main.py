@@ -5,7 +5,7 @@ from src.evaluator import ChunkEvaluator
 
 def main():
     # 1. 설정
-    input_pdf = "RAG_TEST_DATA/2014_08.pdf" # 테스트할 PDF 경로
+    input_pdf = r"d:\소스테스트\Azure-openai-sample\RAG_TEST_DATA\(보도자료)2024년+교육부+주요정책+추진계획+발표.pdf" # 테스트할 PDF 경로
     output_dir = "output"
     output_md = os.path.join(output_dir, "processed_doc.md")
 
@@ -38,7 +38,7 @@ def main():
     for i, chunk in enumerate(chunks[:10]):
         print(f"\n🧩 Chunk #{i+1}")
         print(f"Metadata: {chunk.metadata}")
-        print(f"Content: {chunk.page_content[:250]}...") # 앞부분만 출력
+        print(f"Content: {chunk.page_content[:2500]}...") # 앞부분만 출력
         print("-" * 50)
 
 if __name__ == "__main__":
